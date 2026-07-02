@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Hotel Paradise</title>
+<meta name="description" content="View photos of Hotel Paradise rooms, pool, restaurant and lobby with a responsive filterable gallery.">
+<meta name="keywords" content="hotel gallery, hotel photos, hotel paradise images">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Hotel Paradise</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-banner">
+  <div class="container">
+    <h1>Gallery</h1>
+    <p>A glimpse into our rooms and facilities.</p>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Explore Hotel Paradise</h2>
+  <div class="filter-buttons">
+    <button class="btn small" onclick="filterGallery('all')">All</button>
+    <button class="btn small" onclick="filterGallery('rooms')">Rooms</button>
+    <button class="btn small" onclick="filterGallery('facilities')">Facilities</button>
+  </div>
+  <div class="gallery-grid">
+    <figure class="gallery-item rooms"><img src="images/deluxe-room.jpg" alt="Deluxe room at Hotel Paradise"><figcaption>Deluxe Room</figcaption></figure>
+    <figure class="gallery-item rooms"><img src="images/executive-room.jpg" alt="Executive room at Hotel Paradise"><figcaption>Executive Room</figcaption></figure>
+    <figure class="gallery-item rooms"><img src="images/suite-room.jpg" alt="Luxury suite at Hotel Paradise"><figcaption>Luxury Suite</figcaption></figure>
+    <figure class="gallery-item facilities"><img src="images/pool.jpg" alt="Swimming pool at Hotel Paradise"><figcaption>Swimming Pool</figcaption></figure>
+    <figure class="gallery-item facilities"><img src="images/restaurant.jpg" alt="Restaurant at Hotel Paradise"><figcaption>Restaurant</figcaption></figure>
+    <figure class="gallery-item facilities"><img src="images/lobby.jpg" alt="Hotel lobby at Hotel Paradise"><figcaption>Lobby</figcaption></figure>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Hotel Paradise</h3>
+      <p>A comfortable and affordable stay for every traveller. Sample frontend website built with HTML, CSS and JavaScript.</p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="rooms.html">Rooms</a> | <a href="gallery.html">Gallery</a> | <a href="contact.html">Book Now</a></p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>Email: info@hotelparadise.com<br>Phone: +91-9876543210</p>
+    </div>
+  </div>
+  <p class="copyright">© 2026 Hotel Paradise. Designed for MANTRA 2026 Summer School Assignment.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

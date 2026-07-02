@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rooms & Rates | Hotel Paradise</title>
+<meta name="description" content="Browse Hotel Paradise room types, prices and facilities, and calculate your estimated stay cost.">
+<meta name="keywords" content="hotel rooms, room prices, deluxe room, executive room, suite booking">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Hotel Paradise</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="rooms.html" class="active">Rooms</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-banner">
+  <div class="container">
+    <h1>Our Rooms</h1>
+    <p>Choose the room that fits your comfort and budget.</p>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Room Types & Rates</h2>
+  <div class="cards">
+    <article class="card">
+      <img src="images/deluxe-room.jpg" alt="Deluxe room with double bed at Hotel Paradise">
+      <div class="card-body">
+        <h3>Deluxe Room</h3>
+        <p>250 sq.ft, city view, free Wi-Fi, breakfast included.</p>
+        <p class="price">₹3,499 per night</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/executive-room.jpg" alt="Executive room with work desk at Hotel Paradise">
+      <div class="card-body">
+        <h3>Executive Room</h3>
+        <p>320 sq.ft, work desk, mini fridge, breakfast included.</p>
+        <p class="price">₹4,999 per night</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/suite-room.jpg" alt="Luxury suite with sitting area at Hotel Paradise">
+      <div class="card-body">
+        <h3>Luxury Suite</h3>
+        <p>450 sq.ft, separate living area, premium amenities.</p>
+        <p class="price">₹7,999 per night</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Estimate Your Stay</h2>
+  <div class="calculator-box">
+    <label for="roomSelect">Select Room Type</label>
+    <select id="roomSelect">
+      <option value="3499">Deluxe Room - ₹3,499/night</option>
+      <option value="4999">Executive Room - ₹4,999/night</option>
+      <option value="7999">Luxury Suite - ₹7,999/night</option>
+    </select>
+    <label for="nightsCount">Number of Nights</label>
+    <input type="number" id="nightsCount" min="1" value="1">
+    <button class="btn" onclick="calculateCost()">Calculate Cost</button>
+    <p id="costResult" class="result"></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Hotel Paradise</h3>
+      <p>A comfortable and affordable stay for every traveller. Sample frontend website built with HTML, CSS and JavaScript.</p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="rooms.html">Rooms</a> | <a href="gallery.html">Gallery</a> | <a href="contact.html">Book Now</a></p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>Email: info@hotelparadise.com<br>Phone: +91-9876543210</p>
+    </div>
+  </div>
+  <p class="copyright">© 2026 Hotel Paradise. Designed for MANTRA 2026 Summer School Assignment.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
