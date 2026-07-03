@@ -15,6 +15,7 @@
   <div class="container header-inner">
     <a class="logo" href="index.html">Hotel Paradise</a>
     <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+
     <nav class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -35,46 +36,90 @@
 </section>
 
 <section class="container section">
-  <h2>Explore Hotel Paradise</h2>
-  <div class="filter-buttons">
-    <button class="btn small" onclick="filterGallery('all')">All</button>
-    <button class="btn small" onclick="filterGallery('rooms')">Rooms</button>
-    <button class="btn small" onclick="filterGallery('facilities')">Facilities</button>
-  </div>
-  <div class="gallery-grid">
-    <figure class="gallery-item rooms"><img src="images/deluxe-room.jpg" alt="Deluxe room at Hotel Paradise"><figcaption>Deluxe Room</figcaption></figure>
-    <figure class="gallery-item rooms"><img src="images/executive-room.jpg" alt="Executive room at Hotel Paradise"><figcaption>Executive Room</figcaption></figure>
-    <figure class="gallery-item rooms"><img src="images/suite-room.jpg" alt="Luxury suite at Hotel Paradise"><figcaption>Luxury Suite</figcaption></figure>
-    <figure class="gallery-item facilities"><img src="images/pool.jpg" alt="Swimming pool at Hotel Paradise"><figcaption>Swimming Pool</figcaption></figure>
-    <figure class="gallery-item facilities"><img src="images/restaurant.jpg" alt="Restaurant at Hotel Paradise"><figcaption>Restaurant</figcaption></figure>
-    <figure class="gallery-item facilities"><img src="images/lobby.jpg" alt="Hotel lobby at Hotel Paradise"><figcaption>Lobby</figcaption></figure>
-  </div>
+
+<h2>Explore Hotel Paradise</h2>
+
+<div class="filter-buttons">
+<button class="btn small" onclick="filterGallery('all')">All</button>
+<button class="btn small" onclick="filterGallery('rooms')">Rooms</button>
+<button class="btn small" onclick="filterGallery('facilities')">Facilities</button>
+</div>
+
+<div class="gallery-grid">
+
+<figure class="gallery-item rooms">
+<img src="deluxe-room.jpg" alt="Deluxe Room">
+<figcaption>Deluxe Room</figcaption>
+</figure>
+
+<figure class="gallery-item rooms">
+<img src="executive-room.jpg" alt="Executive Room">
+<figcaption>Executive Room</figcaption>
+</figure>
+
+<figure class="gallery-item rooms">
+<img src="suite-room.jpg" alt="Luxury Suite">
+<figcaption>Luxury Suite</figcaption>
+</figure>
+
+<figure class="gallery-item facilities">
+<img src="pool.jpg" alt="Swimming Pool">
+<figcaption>Swimming Pool</figcaption>
+</figure>
+
+<figure class="gallery-item facilities">
+<img src="restaurant.jpg" alt="Restaurant">
+<figcaption>Restaurant</figcaption>
+</figure>
+
+<figure class="gallery-item facilities">
+<img src="lobby.jpg" alt="Lobby">
+<figcaption>Lobby</figcaption>
+</figure>
+
+</div>
+
 </section>
 
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <h3>Hotel Paradise</h3>
-      <p>A comfortable and affordable stay for every traveller. Sample frontend website built with HTML, CSS and JavaScript.</p>
-    </div>
-    <div>
-      <h3>Quick Links</h3>
-      <p><a href="rooms.html">Rooms</a> | <a href="gallery.html">Gallery</a> | <a href="contact.html">Book Now</a></p>
-    </div>
-    <div>
-      <h3>Contact</h3>
-      <p>Email: info@hotelparadise.com<br>Phone: +91-9876543210</p>
-    </div>
-  </div>
-  <p class="copyright">© 2026 Hotel Paradise. Designed for MANTRA 2026 Summer School Assignment.</p>
+<div class="container footer-grid">
+
+<div>
+<h3>Hotel Paradise</h3>
+<p>A comfortable and affordable stay for every traveller.</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<p>
+<a href="rooms.html">Rooms</a> |
+<a href="gallery.html">Gallery</a> |
+<a href="contact.html">Contact</a>
+</p>
+</div>
+
+<div>
+<h3>Contact</h3>
+<p>
+Email: info@hotelparadise.com<br>
+Phone: +91-9876543210
+</p>
+</div>
+
+</div>
+
+<p class="copyright">
+© 2026 Hotel Paradise. Designed for MANTRA 2026 Summer School Assignment.
+</p>
 </footer>
-<script src="js/script.js"></script>
+
+<script src="script.js"></script>
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
